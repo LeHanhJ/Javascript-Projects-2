@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./CSS/CSS_1.css">
+    </head>
+
+    <body>
+        
+        <form name="nameform" action="/action_page.php" onsubmit="return validateForm()" method="post" novalidate>
+        <!--name = name of the form; action sends the information to /action_page.php (not created yet); onsubmit calls the function validateForm() made in javascript_2.js; method "post" to save the information without putting it in the URL bar. contrary to method "get"; novalidate to get rid of "Please fill out form here" pop up on fname line-->
+           
+        <!---->       
+        <h4>Please enter your information below so I may contact you!</h4>
+            <label for="fullname" >Full name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Please enter your full name" required>
+            <!--id, name, and for are all the same to keep it organized. placeholder for placeholder text in the input field; required to not let users skip the field-->
+            <br>
+            <label for="email">Email address:</label><br>
+            <input type="text" id="email" name="email" placeholder="Please enter your email address" required>
+            <br>
+            <label for="phoneNum">Phone number:</label><br>
+            <input type="text" id="phoneNum" name="phoneNum" placeholder="Please enter your phone number" required>
+            <br>
+
+            <!--SUBMIT-->
+            <input type="submit" value="Submit">
+        </form>
+
+    <script src="./Javascript/javascript_2.js"></script>
+    </body>
+</html>
